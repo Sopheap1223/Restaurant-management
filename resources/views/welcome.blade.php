@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
+    <div class="mt-5">
+        <a href="{{url('login')}}">Log Out</a>
+    </div>
+
     <div class="container">
         <div class="topbar">
             <div class="logo">
@@ -31,7 +35,7 @@
                 </li>
                 <li>
                     <a href="#table"><i class="fas fa-user-gratuate"></i>
-                    <div class="bar">Table</div></a>   
+                    <div class="bar">Table</div></a>
                 </li>
                 <li>
                     <a href="/menu"><i class="fas fa-menu"></i>
