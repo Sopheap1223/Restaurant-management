@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
+
     <div class="container">
         <div class="topbar">
             <div class="logo">
@@ -31,7 +32,7 @@
                 </li>
                 <li>
                     <a href="/welcome"><i class="fas fa-user-gratuate"></i>
-                    <div class="table-link">Table</div></a>   
+                    <div class="table-link">Table</div></a>
                 </li>
                 <li>
                     <a href="#menu"><i class="fas fa-menu"></i>
@@ -59,143 +60,35 @@
                 </li>
             </ul>
         </div>
+
+
         <!-- thems -->
         <div class="Main" id="menu">
             <div class="menu" >
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
+
+                    <div class="menus">
+                        <div class="menu-content">
+                            @foreach($data as $food)
+                                <img style="width: auto;" src="{{$food -> food_image}}">
+                                <h2>{{$food -> id}}
+                                    <h2>{{$food -> name}}</h2>
+                                    <h2>type:{{$food -> type_of_food}}</h2>
+                                    <h2>price:{{$food -> price}}$</h2></h2>
+
+                            @endforeach
+                        </div>
                     </div>
-                    
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
-                <div class="menus">
-                    <div class="menu-content">
-                      <img src="/image/coverphoto.jpg" alt="">
-                      <h2>burger</h2>
-                        <h2>type: seafood</h2>
-                        <span>price : 2.00$</span>
-                    </div>
-                </div>
+
+
+
             </div>
             <div class="chart"></div>
-
+            <button type="Submit" style="background-color: #299b63" class="btn btn-primary">Add</button>
+            <button type="Submit" style="background-color: #299b63" class="btn btn-primary">Delete</button>
         </div>
+
     </div>
+
     <script src="index.js"></script>
 </body>
 </html>

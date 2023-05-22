@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
+use App\Http\Controllers\foodController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,4 @@ Route::get ('/menu', function(){
 Route::get ('/category', function(){
     return view('category');
 })->name('category');
+Route::get('menu',[foodController::class,'index']);
