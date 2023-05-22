@@ -66,86 +66,27 @@
         <!-- thems -->
         <div class="main" id="table">
             <div class="tables" >
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.1</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.2</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.3</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.4</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.5</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.6</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.7</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.9</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.10</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.11</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.12</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.13</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.14</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.15</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.16</div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="table-content">
-                       <div class="table-number">No.17</div>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <a href="{{url('register')}}">
+                            <div class="table">
+                                <div class="table-content">
+                                    <div class="table-number">No.1</div>
+                                </div>
+                            </div>    
+                        </a>
+                    </tr>
+                    <tr>
+                        <a href="{{url('register')}}">
+                            <div class="table">
+                                <div class="table-content">
+                                    <div class="table-number">No.2</div>
+                                </div>
+                            </div>    
+                        </a>
+                    </tr>
+                </table>
+                
             </div>
             <div class="chart"></div>
 
