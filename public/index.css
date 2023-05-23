@@ -174,10 +174,10 @@
     text-align:center;
     padding:10px 5px;
 }
-.add-new .link-add{
+.add-new .link-add i{
     text-decoration:none;
     text-align:center;
-    font-size:18px;
+    font-size:24px;
     color:black;    
 }
 .Search{

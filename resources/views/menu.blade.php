@@ -7,6 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="{{ asset('index.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
 
@@ -27,36 +28,41 @@
         <div class="sidebar">
             <ul>
                 <li>
-                    <a href=""><i class="fas fa-th-large"></i>
-                    <div>Statistic</div></a>
+                    <a href=""><i class="fa-regular fa-flag"></i>
+                    <div>Report</div></a>
                 </li>
                 <li>
-                    <a href="/welcome"><i class="fas fa-user-gratuate"></i>
+                    <a href="/welcome"><i class="fas fa-th-large"></i>
                     <div class="table-link">Table</div></a>
                 </li>
                 <li>
-                    <a href="#menu"><i class="fas fa-menu"></i>
-                    <div>Menu</div></a>
+                    <a href="#menu"><i class="fa-regular fa-box"></i>
+                    <div>Product</div></a>
                 </li>
                 <li>
                     <a href="/category"><i class="fas fa-chart-bar"></i>
                     <div>Categorie</div></a>
                 </li>
                 <li>
-                    <a href=""><i class="fas fa-hand-holding-usd"></i>
+                <a href=""><i class="fa-sharp fa-solid fa-cart-plus"></i>
+                <div class="bar">POS</div></a>
+            </li>
+                <li>
+                    <a href=""><i class="fa-sharp fa-solid fa-clipboard-user"></i>
                     <div>staff</div></a>
                 </li>
                 <li>
-                    <a href=""><i class="fas fa-hand-holding-usd"></i>
-                    <div>Chef</div></a>
+                    <a href=""><i class="fa-solid fa-kitchen-set"></i>
+                    <div class="bar">Kitchen</div></a>
                 </li>
                 <li>
                     <a href=""><i class="fas fa-cog"></i>
                     <div>Setting</div></a>
                 </li>
                 <li>
-                    <a href=""><i class="fas fa-question"></i>
-                    <div>Help</div></a>
+                    <a href="{{url('login')}}"><i class="fa-solid fa-right-from-bracket"></i>
+                    <div class="">Exit</div>
+                    </a>
                 </li>
             </ul>
         </div>
