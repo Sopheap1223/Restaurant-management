@@ -40,3 +40,8 @@ Route::get ('/category', function(){
 Route::get('/menu',[foodController::class,'index']);
 Route::get('/AddFood',[FoodController::class ,'AddFood']);
 Route::post('/saveFood',[FoodController::class ,'saveFood'])->name("saveFood");
+Route::get('EditFood/{id}',[FoodController::class ,'EditFood']);
+
+Route::get('/AdminPage',function (){
+    return view('AdminPage');
+})->name('AdminPage');

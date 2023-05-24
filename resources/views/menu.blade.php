@@ -86,13 +86,11 @@
                             @endforeach
                         </div>
                     </div>
-
-
-
             </div>
             <div class="chart"></div>
             <a href="{{url('AddFood')}}" class="btn btn-primary">Add</a>
-            <button type="Submit" class="btn btn-danger" >Delete</button>
+            <a href="{{url('EditFood/')}}" class="btn btn-primary">Edit</a>
+            <button type="Submit" class="btn btn-danger">delete</button>
         </div>
 
     </div>

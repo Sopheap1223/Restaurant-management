@@ -12,6 +12,7 @@ class FoodController extends Controller
         $data = food::get();
         //return $data;
         return view('menu',compact('data'));
+        return view('Adminpage',compact('data'));
     }
     public function AddFood(){
         return view('AddFood');
