@@ -13,5 +13,5 @@ use PhpParser\Node\Expr\AssignOp\Mod;
 class Food extends Model
 {
     use HasFactory;
-    protected $fillable =['name','type_of_food','food_image'];
+    protected $fillable =['name','type_of_food','food_image','price'];
 }

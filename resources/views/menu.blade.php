@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ asset('index.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -75,7 +77,7 @@
                     <div class="menus">
                         <div class="menu-content">
                             @foreach($data as $food)
-                                <img style="width: auto;" src="{{$food -> food_image}}">
+                                <img style="width: 150px;" src="{{$food -> food_image}}">
                                 <h2>{{$food -> id}}
                                     <h2>{{$food -> name}}</h2>
                                     <h2>type:{{$food -> type_of_food}}</h2>
@@ -89,8 +91,8 @@
 
             </div>
             <div class="chart"></div>
-            <button type="Submit" style="background-color: #299b63" class="btn btn-primary">Add</button>
-            <button type="Submit" style="background-color: #299b63" class="btn btn-primary">Delete</button>
+            <a href="{{url('AddFood')}}" class="btn btn-primary">Add</a>
+            <button type="Submit" class="btn btn-danger" >Delete</button>
         </div>
 
     </div>

@@ -37,4 +37,6 @@ Route::get ('/menu', function(){
 Route::get ('/category', function(){
     return view('category');
 })->name('category');
-Route::get('menu',[foodController::class,'index']);
+Route::get('/menu',[foodController::class,'index']);
+Route::get('/AddFood',[FoodController::class ,'AddFood']);
+Route::post('/saveFood',[FoodController::class ,'saveFood'])->name("saveFood");
