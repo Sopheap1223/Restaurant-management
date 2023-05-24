@@ -13,32 +13,33 @@
     </div>
 @endif
 
-<form action="{{route('saveFood')}}" method="POST" class="ms-auto me-auto mt-3" style="width: 300px">
+<form action="{{url('updateFood')}}" method="POST" class="ms-auto me-auto mt-3" style="width: 300px">
     @csrf
+    <input type="hidden" name="id" value="{{$data->id}}">
     <div class="mb-3">
         <label class="form-label">Food Name</label>
-        <input type="text" class="form-control" name="name">
+        <input type="text" class="form-control" name="name" value="{{$data->name}}">
         @error('name')
         <div class="alert alert-danger" role="alert">{{$message}}</div>
         @enderror
     </div>
     <div class="mb-3">
         <label class="form-label">type of food</label>
-        <input type="text" class="form-control" name="type_of_food">
+        <input type="text" class="form-control" name="type_of_food" value="{{$data->type_of_food}}">
         @error('type_of_food')
         <div class="alert alert-danger" role="alert">{{$message}}</div>
         @enderror
     </div>
     <div class="mb-3">
         <label class="form-label">Image</label>
-        <input type="text" class="form-control" name="image" placeholder="link image" >
+        <input type="text" class="form-control" name="image" placeholder="link image" value="{{$data->image}}">
         @error('image')
         <div class="alert alert-danger" role="alert">{{$message}}</div>
         @enderror
     </div>
     <div class="mb-3">
         <label class="form-label">Price</label>
-        <input type="text" class="form-control" name="price">
+        <input type="text" class="form-control" name="price" value="{{$data->price}}">
         @error('price')
         <div class="alert alert-danger" role="alert">{{$message}}</div>
         @enderror

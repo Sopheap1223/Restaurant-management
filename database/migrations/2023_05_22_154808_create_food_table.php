@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('type_of_food');
             $table->string('food_image');
-            $table -> integer('price');
+            $table -> string('price');
             $table->timestamps();
         });
     }
