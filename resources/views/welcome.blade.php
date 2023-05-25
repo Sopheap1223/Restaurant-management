@@ -13,19 +13,7 @@
     
 
     <div class="container">
-        <div class="topbar">
-            <div class="logo">
-                <h2>brand.</h2>
-            </div>
-            <div class="search">
-                <input type="text" id="search" placeholder="search here">
-                <label for="search"><i class="fas fa-search"></i></label>
-            </div>
-            <i class="fas fa-bell"></i>
-            <div class="user">
-                <img src="/image/coverphoto.jpg" alt="">
-            </div>
-        </div>
+       
         <div class="sidebar">
             <ul>
                 <li>
