@@ -73,12 +73,11 @@
                     <tr> 
                          <div class="table">
                              <div class="table-content">
-                                @foreach
+                                @foreach($data as $food)
                                  <h2>{{$tables -> id}}
                                     <h2>{{$tables -> table_number}}</h2>
                                     <h2>{{$tables -> chair_count}}</h2>
                                 @endforeach 
-
                             </div>
                         </div>    
                     </tr>

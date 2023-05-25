@@ -27,6 +27,7 @@ Route::get ('/register',[AuthManager::class , 'register'] )
 Route::post ('/register',[AuthManager::class , 'registerPost'] )
     ->name('register.post');
 
+
 Route::get ('/welcome', function(){
     return view('welcome');
 })->name('welcome');
@@ -40,3 +41,9 @@ Route::get ('/category', function(){
 Route::get('/menu',[foodController::class,'index']);
 Route::get('/AddFood',[FoodController::class ,'AddFood']);
 Route::post('/saveFood',[FoodController::class ,'saveFood'])->name("saveFood");
+
+
+Route::get('/table-view',function(){
+    return view('table-view');
+})->name('table');
+
