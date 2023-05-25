@@ -14,19 +14,7 @@
 <body>
 
     <div class="container">
-        <div class="topbar">
-            <div class="logo">
-                <h2>brand.</h2>
-            </div>
-            <div class="search">
-                <input type="text" id="search" placeholder="search here">
-                <label for="search"><i class="fas fa-search"></i></label>
-            </div>
-            <i class="fas fa-bell"></i>
-            <div class="user">
-                <img src="/image/coverphoto.jpg" alt="">
-            </div>
-        </div>
+        
         <div class="sidebar">
             <ul>
                 <li>
@@ -73,22 +61,21 @@
         <!-- thems -->
         <div class="Main" id="menu">
             <div class="menu" >
-
+            @php
+                $i=1
+                @endphp
+                @foreach($data as $food)
                     <div class="menus">
                         <div class="menu-content">
-                            @php
-                                $i=1
-                            @endphp
-                            @foreach($data as $food)
+                           
                                 <img style="width: 150px;" src="{{$food -> food_image}}">
                                 <h2>{{$i++}}</h2>
                                     <h2>{{$food -> name}}</h2>
                                     <h2>type:{{$food -> type_of_food}}</h2>
                                     <h2>price:{{$food -> price}}$</h2>
-
-                            @endforeach
                         </div>
                     </div>
+                    @endforeach
             </div>
             <div class="chart"></div>
         </div>
