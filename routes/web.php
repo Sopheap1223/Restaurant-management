@@ -41,9 +41,19 @@ Route::get ('/category', function(){
 Route::get('/menu',[foodController::class,'index']);
 Route::get('/AddFood',[FoodController::class ,'AddFood']);
 Route::post('/saveFood',[FoodController::class ,'saveFood'])->name("saveFood");
+<<<<<<< HEAD
 
 
 Route::get('/table-view',function(){
     return view('table-view');
 })->name('table');
 
+=======
+Route::get('EditFood/{id}',[FoodController::class ,'EditFood']);
+Route::get('deleteFood/{id}',[FoodController::class ,'deleteFood']);
+Route::post('updateFood',[FoodController::class ,'updateFood']);
+Route::get('/AdminPage',[FoodController::class ,'AdminPage'])->middleware('is_admin');
+Route::prefix('/')->middleware('auth')->group(function (){
+    Route::get('/Adminpage',[AuthManager::class , 'login']);
+});
+>>>>>>> ccdf79f025f9ffd406ca15a1cea30a23bcdfdcdc

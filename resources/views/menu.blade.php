@@ -76,23 +76,21 @@
 
                     <div class="menus">
                         <div class="menu-content">
+                            @php
+                                $i=1
+                            @endphp
                             @foreach($data as $food)
                                 <img style="width: 150px;" src="{{$food -> food_image}}">
-                                <h2>{{$food -> id}}
+                                <h2>{{$i++}}</h2>
                                     <h2>{{$food -> name}}</h2>
                                     <h2>type:{{$food -> type_of_food}}</h2>
-                                    <h2>price:{{$food -> price}}$</h2></h2>
+                                    <h2>price:{{$food -> price}}$</h2>
 
                             @endforeach
                         </div>
                     </div>
-
-
-
             </div>
             <div class="chart"></div>
-            <a href="{{url('AddFood')}}" class="btn btn-primary">Add</a>
-            <button type="Submit" class="btn btn-danger" >Delete</button>
         </div>
 
     </div>
