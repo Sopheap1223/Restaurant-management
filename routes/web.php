@@ -43,4 +43,7 @@ Route::post('/saveFood',[FoodController::class ,'saveFood'])->name("saveFood");
 Route::get('EditFood/{id}',[FoodController::class ,'EditFood']);
 Route::get('deleteFood/{id}',[FoodController::class ,'deleteFood']);
 Route::post('updateFood',[FoodController::class ,'updateFood']);
-Route::get('AdminPage',[FoodController::class ,'AdminPage']);
+Route::get('/AdminPage',[FoodController::class ,'AdminPage'])->middleware('is_admin');
+Route::prefix('/')->middleware('auth')->group(function (){
+    Route::get('/Adminpage',[AuthManager::class , 'login']);
+});

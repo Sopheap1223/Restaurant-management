@@ -72,6 +72,10 @@
 
         <!-- thems -->
         <div class="Main" id="menu">
+            <div class="Search" style="float: right ; margin-top: 10px">
+                <input type="text" placeholder="search" >
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
             <div class="menu" >
 
                     <div class="menus">
@@ -85,7 +89,6 @@
                                     <h2>{{$food -> name}}</h2>
                                     <h2>type:{{$food -> type_of_food}}</h2>
                                     <h2>price:{{$food -> price}}$</h2>
-
                             @endforeach
                         </div>
                     </div>

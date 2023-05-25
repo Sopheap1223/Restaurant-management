@@ -14,7 +14,9 @@ class AdminSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'name'=>'admin'
+            'name'=>'admin',
+            'password'=>'admin12345^&*'
         ]);
+        $user->assignRold('chef','admin');
     }
 }
